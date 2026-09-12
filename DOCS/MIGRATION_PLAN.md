@@ -2,13 +2,20 @@
 
 ## Overview
 
-This document defines the strategy for migrating Anaxee's three existing digital properties into the unified anaxee.com platform:
+This document defines the strategy for migrating Anaxee's digital properties into the unified anaxee.com platform:
 
 1. **Corporate Website** (anaxee.com) — WordPress
 2. **Blog** (blog.anaxee.com) — WordPress
 3. **Prabhavak** (prabhavak.anaxee.com) — Next.js
+4. **Anaxee Tech** (anaxeetech.com) — Lovable (React) — *Retirement*
 
 **Goal:** Zero traffic loss, preserved SEO equity, improved user experience.
+
+**Related Documents:**
+- [ROADMAP.md](./ROADMAP.md) — Implementation timeline
+- [SITE_ARCHITECTURE.md](./SITE_ARCHITECTURE.md) — Target sitemap
+- [TECH_STACK.md](./TECH_STACK.md) — Technology decisions
+- [PRD.md](../PRD.md) — Product requirements
 
 ---
 
@@ -66,6 +73,23 @@ This document defines the strategy for migrating Anaxee's three existing digital
 - Application functionality must not break
 - API dependencies
 - Brand repositioning (product of Anaxee, not separate entity)
+
+### 1.4 Anaxee Tech (anaxeetech.com)
+
+| Attribute | Value |
+|-----------|-------|
+| Platform | Lovable (AI app builder) |
+| URL Structure | Client-side rendered |
+| Content Type | Unfinished prototype |
+| SEO Status | Minimal (UUID title, no meta description) |
+| Functionality | None (abandoned) |
+| Status | **To be retired** |
+
+**Key Risks:**
+- Low/zero traffic — minimal risk
+- Possible backlinks — check before retirement
+- Brand confusion if discovered by prospects/investors
+- Should 301 redirect to anaxee.com after launch
 
 ---
 
@@ -229,6 +253,36 @@ anaxee.com Header:
 │   └── Retail Intelligence Platform → /products/retail-intelligence-platform/
 ```
 
+### 2.4 Anaxee Tech Retirement
+
+#### Approach: 301 Redirect to Main Domain
+
+**Strategy:**
+Anaxee Tech (anaxeetech.com) is an unfinished prototype that should be retired rather than migrated.
+
+**Actions:**
+1. **Before launch:** Check analytics/backlinks for any value
+2. **At launch:** Set up 301 redirect from anaxeetech.com to anaxee.com
+3. **After launch:** Monitor for any traffic or backlink issues
+
+**Redirect Rules:**
+```nginx
+# anaxeetech.com → anaxee.com
+# Wildcard redirect to preserve any traffic
+server {
+    server_name anaxeetech.com www.anaxeetech.com;
+    return 301 https://anaxee.com$request_uri;
+}
+```
+
+**Pre-Retirement Checklist:**
+- [ ] Check Google Analytics for traffic volume
+- [ ] Check Ahrefs/Moz for backlinks
+- [ ] Verify no active integrations or API calls
+- [ ] Confirm no internal team dependencies
+- [ ] Set up 301 redirect to anaxee.com
+- [ ] Monitor for 30 days post-redirect
+
 ---
 
 ## 3. Redirect Strategy
@@ -271,6 +325,8 @@ module.exports = {
   },
 };
 ```
+
+**Note:** anaxeetech.com redirects must be configured at the DNS/ registrar level (not in Next.js) since it's a separate domain.
 
 ### 3.3 Redirect Testing
 
@@ -538,9 +594,9 @@ module.exports = {
 
 | Week | Activity |
 |------|----------|
-| 1 | Content audit and classification |
+| 1 | Content audit and classification (all 4 properties) |
 | 2 | CMS setup and content model |
-| 3 | Redirect map creation |
+| 3 | Redirect map creation (including anaxeetech.com) |
 | 4–6 | Content migration (high priority) |
 | 6–8 | Content migration (medium priority) |
 | 8–10 | Staging deployment and testing |
@@ -549,6 +605,7 @@ module.exports = {
 | 12 | Launch preparation |
 | 13 | Launch |
 | 14–16 | Post-launch monitoring and fixes |
+| 14–16 | anaxeetech.com 301 redirect activation and monitoring |
 
 ---
 
@@ -566,6 +623,7 @@ module.exports = {
 | Redirect chains | Medium | Medium | Automated redirect testing |
 | Mobile responsiveness | Medium | Medium | Test on real devices |
 | Performance regression | Medium | Low | Performance budget, Lighthouse CI |
+| anaxeetech.com redirect failure | Low | Low | Simple 301, minimal content on domain |
 
 ---
 

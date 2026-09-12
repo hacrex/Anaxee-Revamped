@@ -4,6 +4,21 @@
 
 This roadmap outlines the phased approach to transform Anaxee's fragmented digital presence into a unified, modern, enterprise-grade platform. Each phase builds upon the previous one, with clear deliverables and decision gates.
 
+**Total Duration:** 20 weeks (5 months)
+
+**Properties Consolidated:**
+- anaxee.com (WordPress)
+- blog.anaxee.com (WordPress)
+- prabhavak.anaxee.com (Next.js)
+- anaxeetech.com (Lovable) — *retired*
+
+**Related Documents:**
+- [PRD.md](../PRD.md) — Product requirements and success metrics
+- [MIGRATION_PLAN.md](./MIGRATION_PLAN.md) — Content migration strategy
+- [SITE_ARCHITECTURE.md](./SITE_ARCHITECTURE.md) — Target sitemap
+- [TECH_STACK.md](./TECH_STACK.md) — Technology decisions
+- [LAUNCH_CHECKLIST.md](./LAUNCH_CHECKLIST.md) — Pre-launch tasks
+
 ---
 
 ## Phase 0 — Discovery & Foundation (Weeks 1–2)
@@ -12,18 +27,18 @@ This roadmap outlines the phased approach to transform Anaxee's fragmented digit
 
 ### Activities
 
-- Audit all existing properties (anaxee.com, blog.anaxee.com, prabhavak.anaxee.com)
+- Audit all existing properties (anaxee.com, blog.anaxee.com, prabhavak.anaxee.com, anaxeetech.com)
 - Capture SEO baseline (Search Console exports, top pages, top queries, backlinks)
 - Capture Analytics baseline (GA4 data, traffic sources, conversion events, device split)
-- Complete content inventory across all three properties
+- Complete content inventory across all four properties
 - Brand audit (logo, colors, typography, tone of voice across all properties)
-- Technology audit (WordPress versions, plugins, hosting, Prabhavak stack)
+- Technology audit (WordPress versions, plugins, hosting, Prabhavak stack, Lovable prototype)
 - Infrastructure inventory (DNS, domains, SSL, CI/CD, integrations)
 - Competitor and inspiration research (10–15 reference sites)
 - Finalize brand positioning ("India's Reach Engine")
-- Finalize information architecture (see SITE_ARCHITECTURE.md)
-- Finalize technology stack decisions (see TECH_STACK.md)
-- Document migration risks and mitigation strategies (see MIGRATION_PLAN.md)
+- Finalize information architecture (see [SITE_ARCHITECTURE.md](./SITE_ARCHITECTURE.md))
+- Finalize technology stack decisions (see [TECH_STACK.md](./TECH_STACK.md))
+- Document migration risks and mitigation strategies (see [MIGRATION_PLAN.md](./MIGRATION_PLAN.md))
 
 ### Deliverables
 
@@ -274,6 +289,10 @@ Each page includes:
   - Reposition as product page under anaxee.com/products/prabhavak
   - Preserve Prabhavak app functionality on subdomain
   - Create marketing/landing page on main site
+- Retire anaxeetech.com
+  - Check analytics/backlinks for any value
+  - Set up 301 redirect to anaxee.com
+  - Monitor for traffic/backlink issues
 - Set up comprehensive redirect map (301 redirects)
 - Verify all migrated content renders correctly
 - Check all internal links
@@ -284,6 +303,7 @@ Each page includes:
 - [ ] All blog content migrated
 - [ ] All corporate content migrated
 - [ ] Prabhavak landing page created
+- [ ] anaxeetech.com 301 redirect configured
 - [ ] Redirect map implemented
 - [ ] Content verification complete
 - [ ] 404 error check complete
@@ -545,6 +565,7 @@ Note: Phases overlap intentionally. Phases 3–7 run partially in parallel with 
 | Brand decision delays | Phase 1 delayed | Get brand approval in Phase 0 |
 | Third-party integration issues | Phase 6 delayed | Test integrations early |
 | Performance issues | Phase 8 delays | Performance budgets from Phase 2 |
+| anaxeetech.com redirect issues | Low | Simple 301 redirect, minimal content |
 
 ---
 
