@@ -4,6 +4,16 @@
 
 This document defines the complete technology stack for the Anaxee digital platform, including frontend framework, CMS, hosting, analytics, and all supporting tools and services.
 
+**Version:** 1.0
+**Last Updated:** September 2026
+
+**Related Documents:**
+- [PRD.md](../PRD.md) — Section 7: Technology Stack (requirements)
+- [SITE_ARCHITECTURE.md](./SITE_ARCHITECTURE.md) — URL patterns and project structure
+- [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md) — Design tokens and Tailwind configuration
+- [ROADMAP.md](./ROADMAP.md) — Phase 2: Technical Foundation
+- [MIGRATION_PLAN.md](./MIGRATION_PLAN.md) — Technology migration strategy
+
 ---
 
 ## 1. Frontend Stack
