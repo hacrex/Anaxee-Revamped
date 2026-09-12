@@ -4,6 +4,12 @@
 
 This document defines the complete site structure for the unified Anaxee digital platform at anaxee.com. It consolidates the corporate website, blog, and Prabhavak into a single, cohesive experience.
 
+**Related Documents:**
+- [PRD.md](../PRD.md) — Product requirements (Section 4: Information Architecture)
+- [TECH_STACK.md](./TECH_STACK.md) — URL patterns and Next.js configuration
+- [CONTENT_STRATEGY.md](./CONTENT_STRATEGY.md) — SEO and content hub strategy
+- [MIGRATION_PLAN.md](./MIGRATION_PLAN.md) — Redirect strategy from old URLs
+
 ---
 
 ## Architecture Principles
@@ -588,3 +594,40 @@ When ready for global markets:
 - `/global/` or country-specific subdirectories
 - Multi-language support via i18n
 - Region-specific content and case studies
+
+---
+
+## Domain Strategy
+
+### Primary Domain
+
+- **anaxee.com** — All marketing, content, and product pages
+
+### Redirected Domains
+
+| Domain | Strategy | Implementation |
+|--------|----------|----------------|
+| blog.anaxee.com | Redirect to /resources/blog/ | DNS-level 301 redirect |
+| anaxeetech.com | Redirect to anaxee.com | DNS-level 301 redirect |
+
+### Preserved Domains
+
+| Domain | Purpose | Notes |
+|--------|---------|-------|
+| prabhavak.anaxee.com | Application backend | User auth, dashboard, API — marketing page on main site |
+
+### Redirect Rules
+
+```nginx
+# blog.anaxee.com → anaxee.com/resources/blog/
+server {
+    server_name blog.anaxee.com;
+    return 301 https://anaxee.com/resources/blog$request_uri;
+}
+
+# anaxeetech.com → anaxee.com
+server {
+    server_name anaxeetech.com www.anaxeetech.com;
+    return 301 https://anaxee.com$request_uri;
+}
+```
