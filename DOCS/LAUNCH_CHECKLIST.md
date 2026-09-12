@@ -4,6 +4,17 @@
 
 Comprehensive checklist for launching the Anaxee digital platform, covering pre-launch preparation through post-launch monitoring.
 
+**Properties Managed:**
+- anaxee.com (main site)
+- blog.anaxee.com (redirected to anaxee.com)
+- prabhavak.anaxee.com (app remains, marketing page on main site)
+- anaxeetech.com (retired, 301 redirect to anaxee.com)
+
+**Related Documents:**
+- [ROADMAP.md](./ROADMAP.md) — Implementation timeline
+- [MIGRATION_PLAN.md](./MIGRATION_PLAN.md) — Migration strategy
+- [PRD.md](../PRD.md) — Product requirements
+
 ---
 
 ## Phase 1: Pre-Launch (2–4 Weeks Before)
@@ -68,6 +79,10 @@ Comprehensive checklist for launching the Anaxee digital platform, covering pre-
 - [ ] All redirects tested (no chains, no loops)
 - [ ] Redirect rules documented
 - [ ] All redirects are 301 (permanent)
+- [ ] anaxeetech.com 301 redirect configured at DNS level
+- [ ] anaxeetech.com redirect tested (resolves to anaxee.com)
+- [ ] blog.anaxee.com redirect rules configured
+- [ ] prabhavak.anaxee.com navigation links verified
 
 ### Analytics Readiness
 
@@ -178,8 +193,11 @@ Comprehensive checklist for launching the Anaxee digital platform, covering pre-
 
 - [ ] anaxee.com resolves correctly
 - [ ] www.anaxee.com resolves correctly
-- [ ] SSL certificate valid
-- [ ] HTTPS enforced
+- [ ] anaxeetech.com redirects to anaxee.com (301)
+- [ ] blog.anaxee.com redirects work correctly
+- [ ] prabhavak.anaxee.com resolves correctly
+- [ ] SSL certificate valid on all domains
+- [ ] HTTPS enforced on all domains
 - [ ] No mixed content warnings
 
 ### Performance Verification
