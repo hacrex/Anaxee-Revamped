@@ -10,10 +10,14 @@ The objective is to consolidate Anaxee's existing digital properties into a sing
 
 ## Existing Digital Properties
 
-* **Corporate Website:** https://anaxee.com
-* **Anaxee Blog:** https://blog.anaxee.com
-* **Prabhavak Platform:** https://prabhavak.anaxee.com
-* **Anaxee Tech (lovable):** https://anaxeetech.com
+| Property | URL | Technology | Status |
+|----------|-----|-----------|--------|
+| Corporate Website | https://anaxee.com | WordPress | Outdated design, mispositioned |
+| Blog | https://blog.anaxee.com | WordPress | Separate UX, strong content |
+| Prabhavak Platform | https://prabhavak.anaxee.com | Next.js | Consumer funnel, separate identity |
+| Anaxee Tech | https://anaxeetech.com | Lovable (React) | Unfinished prototype, to be retired |
+
+**Target:** Consolidate all properties into a single unified platform at **anaxee.com**
 
 ## Vision
 
@@ -22,6 +26,21 @@ Create a world-class digital platform that positions Anaxee as:
 > **India's Reach Engine**
 
 A technology-enabled network combining AI, data, climate intelligence, and 250,000+ Digital Runners to solve last-mile execution and intelligence challenges across India and beyond.
+
+---
+
+## Table of Contents
+
+- [Project Goals](#project-goals)
+- [Proposed Information Architecture](#proposed-information-architecture)
+- [Target Audiences](#target-audiences)
+- [Key Content Areas](#key-content-areas)
+- [Recommended Technology Stack](#recommended-technology-stack)
+- [Success Metrics](#success-metrics)
+- [Expected Outcome](#expected-outcome)
+- [Documentation](#documentation)
+
+---
 
 ## Project Goals
 
@@ -218,8 +237,46 @@ while strengthening Anaxee's position as **India's Reach Engine**.
 
 ---
 
+## Documentation
+
+### Project Planning
+
+| Document | Description |
+|----------|-------------|
+| [PRD.md](./PRD.md) | Product Requirements Document — features, metrics, technical specs |
+| [day0.md](./day0.md) | Day 0 kickoff and discovery checklist |
+| [Transformation-Proposal.md](./Transformation-Proposal.md) | Current state assessment and transformation strategy |
+| [PROJECT_SUGGESTIONS.md](./PROJECT_SUGGESTIONS.md) | Strategic recommendations and feature ideas |
+| [Ideas & Vision Board.md](./Ideas%20%26%20Vision%20Board.md) | Creative ideas and future vision |
+
+### Technical Documentation (DOCS/)
+
+| Document | Description |
+|----------|-------------|
+| [TECH_STACK.md](./DOCS/TECH_STACK.md) | Next.js, CMS, hosting, analytics decisions |
+| [SITE_ARCHITECTURE.md](./DOCS/SITE_ARCHITECTURE.md) | Complete sitemap and information architecture |
+| [DESIGN_SYSTEM.md](./DOCS/DESIGN_SYSTEM.md) | Branding, colors, typography, components |
+| [CONTENT_STRATEGY.md](./DOCS/CONTENT_STRATEGY.md) | SEO, GEO, and AI content strategy |
+| [FEATURES.md](./DOCS/FEATURES.md) | Feature wishlist and future enhancements |
+| [ROADMAP.md](./DOCS/ROADMAP.md) | Phased implementation plan (20 weeks) |
+| [MIGRATION_PLAN.md](./DOCS/MIGRATION_PLAN.md) | WordPress, Blog, and Prabhavak migration strategy |
+| [LAUNCH_CHECKLIST.md](./DOCS/LAUNCH_CHECKLIST.md) | Pre-launch and post-launch tasks |
+
+### Audit Reports
+
+| Document | Description |
+|----------|-------------|
+| [anaxee-brand-colors-logo-audit.md](./anaxee-brand-colors-logo-audit.md) | Brand colors and logo audit findings |
+| [anaxee-digital-consolidation-analysis.md](./anaxee-digital-consolidation-analysis.md) | Digital properties consolidation analysis |
+
+---
+
 ## Status
 
-🚧 Planning & Discovery Phase
+🚧 **Planning & Discovery Phase**
 
 This repository serves as the foundation for Anaxee's next-generation digital experience and will evolve through design, development, content migration, and launch phases.
+
+---
+
+*Last updated: September 2026*
