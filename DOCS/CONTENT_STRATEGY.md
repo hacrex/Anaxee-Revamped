@@ -4,6 +4,16 @@
 
 This document defines the content strategy for the unified Anaxee platform, covering traditional SEO, Generative Engine Optimization (GEO), and AI search visibility. The goal is to position Anaxee as the authoritative source for retail intelligence, AI data collection, climate & carbon, influence marketing, and last-mile execution in India.
 
+**Version:** 1.0
+**Last Updated:** September 2026
+
+**Related Documents:**
+- [PRD.md](../PRD.md) — Section 6.2: SEO, Section 6.3: GEO & AI Search requirements
+- [SITE_ARCHITECTURE.md](./SITE_ARCHITECTURE.md) — Content hub structure, URL patterns
+- [FEATURES.md](./FEATURES.md) — GEO/AI features (P0–P3)
+- [ROADMAP.md](./ROADMAP.md) — Phase 4: Content Platform, Phase 7: SEO/GEO/AI
+- [MIGRATION_PLAN.md](./MIGRATION_PLAN.md) — Blog content migration strategy
+
 ---
 
 ## Content Mission

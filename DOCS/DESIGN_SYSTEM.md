@@ -4,7 +4,19 @@
 
 This document defines the complete design system for the Anaxee digital platform. It establishes the visual language, components, and patterns that ensure consistency across all pages and experiences.
 
+**Version:** 1.0
+**Last Updated:** September 2026
+
 **Design Inspiration:** Stripe, Vercel, Notion, HubSpot, Snowflake, Datadog
+
+**Related Documents:**
+- [PRD.md](../PRD.md) — Section 9: Design Requirements
+- [TECH_STACK.md](./TECH_STACK.md) — Tailwind CSS configuration (Section 1.3)
+- [CONTENT_STRATEGY.md](./CONTENT_STRATEGY.md) — Brand voice and messaging
+- [anaxee-brand-colors-logo-audit.md](../anaxee-brand-colors-logo-audit.md) — Brand audit findings
+
+**Brand Audit Note:**
+> The existing brand audit ([anaxee-brand-colors-logo-audit.md](../anaxee-brand-colors-logo-audit.md)) identified `#54c5d0` (cyan/teal) as the confirmed brand color from the current website. The design system uses a refined palette (`#1E40AF` Anaxee Blue as primary) to support enterprise positioning while maintaining brand continuity. The full audit should be reviewed before finalizing color decisions.
 
 **Core Principles:**
 1. **Technology-First** — Visually communicate innovation and data
