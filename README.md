@@ -13,6 +13,7 @@ The objective is to consolidate Anaxee's existing digital properties into a sing
 * **Corporate Website:** https://anaxee.com
 * **Anaxee Blog:** https://blog.anaxee.com
 * **Prabhavak Platform:** https://prabhavak.anaxee.com
+* **Anaxee Tech (lovable):** https://anaxeetech.com
 
 ## Vision
 
