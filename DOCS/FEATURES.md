@@ -4,6 +4,17 @@
 
 This document captures all feature ideas, future enhancements, and moonshot concepts for the Anaxee digital platform. Features are organized by priority and phase.
 
+**Version:** 1.0
+**Last Updated:** September 2026
+
+**Related Documents:**
+- [PRD.md](../PRD.md) — Section 5: Functional Requirements (P0 features defined)
+- [SITE_ARCHITECTURE.md](./SITE_ARCHITECTURE.md) — Page structure and URL patterns
+- [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md) — Component library and design tokens
+- [CONTENT_STRATEGY.md](./CONTENT_STRATEGY.md) — Content hub strategy
+- [ROADMAP.md](./ROADMAP.md) — Feature implementation timeline
+- [TECH_STACK.md](./TECH_STACK.md) — Technical implementation details
+
 ---
 
 ## Priority Legend
@@ -18,6 +29,8 @@ This document captures all feature ideas, future enhancements, and moonshot conc
 ---
 
 ## Core Features (P0 — Launch)
+
+> **Note:** P0 features are defined in [PRD.md](../PRD.md) Section 5 (Functional Requirements). This list is the expanded wishlist. Features not in PRD Section 5 are marked with [NEW].
 
 ### Homepage
 
@@ -124,6 +137,8 @@ Each with:
 
 ## Enhanced Features (P1 — v1.1)
 
+> **Note:** P1 features extend beyond the PRD MVP. These should be planned for the first post-launch iteration. See [ROADMAP.md](./ROADMAP.md) Phase 6 for advanced features timeline.
+
 ### Interactive India Map
 
 - [ ] State-level drill-down
@@ -184,6 +199,8 @@ Each with:
 ---
 
 ## Advanced Features (P2 — v2.0)
+
+> **Note:** P2 features require additional technical infrastructure. Review [TECH_STACK.md](./TECH_STACK.md) for implementation considerations.
 
 ### Scroll-Based Storytelling
 
@@ -254,6 +271,8 @@ Each with:
 ---
 
 ## Moonshot Features (P3 — Future)
+
+> **Note:** P3 features are aspirational and not planned for near-term implementation. These represent the long-term vision for the platform.
 
 ### AI-Powered Features
 
