@@ -256,6 +256,7 @@ while strengthening Anaxee's position as **India's Reach Engine**.
 | [TECH_STACK.md](./DOCS/TECH_STACK.md) | Next.js, CMS, hosting, analytics decisions |
 | [SITE_ARCHITECTURE.md](./DOCS/SITE_ARCHITECTURE.md) | Complete sitemap and information architecture |
 | [DESIGN_SYSTEM.md](./DOCS/DESIGN_SYSTEM.md) | Branding, colors, typography, components |
+| [UI_UX_RECOMMENDATION.md](./DOCS/UI_UX_RECOMMENDATION.md) | Recommended experience strategy, visual direction, journeys, and delivery priorities |
 | [CONTENT_STRATEGY.md](./DOCS/CONTENT_STRATEGY.md) | SEO, GEO, and AI content strategy |
 | [FEATURES.md](./DOCS/FEATURES.md) | Feature wishlist and future enhancements |
 | [ROADMAP.md](./DOCS/ROADMAP.md) | Phased implementation plan (20 weeks) |
